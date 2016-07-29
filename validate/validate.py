@@ -117,7 +117,6 @@ if __name__ == "__main__":
     suite = unittest.TestSuite()
     testFolder = './basicModels'
     tests = getTests(testFolder)
-    tests = ['18']
     for index in tests:
         suite.addTest(ParametrizedTestCase.parametrize(TestNFSimFile, param={'num': index,
                       'odir': 'basicModels', 'iterations': 10}))
